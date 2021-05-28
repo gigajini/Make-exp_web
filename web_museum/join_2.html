@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang= "ko">
+<head>
+<meta charset="utf-8">
+<title>연습</title>
+</head>
+<body>
+    <header>
+        <h1>회원가입2단계</h1>
+    </header>
+    <section>
+        <form action="#" name="join2" method="post">
+            <fieldset>
+                <legend>아이디 비밀번호</legend>
+                    <p>
+                    <label for="id" name="id">ID</label>
+                    <input id="id" type="text" pattern=""^([a-z0-9_]){6,50}$"" title="영문소문자, 숫자, 언더바(_) 6~50자">
+                    </p>
+                    <label for="password" namd="password">PASSWORD</label>
+                    <input id="password" type="password">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>당신의 성별은 무엇입니까?</legend>
+                    <label for="man">남자</label>
+                    <input id="man" type="radio" name="gender">
+                    <label for="woman">여자</label>
+                    <input id="woman" type="radio" name="gender">
+            </fieldset>
+        </form>
+            <br>
+        <form>
+            <fieldset>
+                <legend>당신의 이름과 이름뜻을 설명해주세요</legend>
+                    <p>
+                        <label for="character">별명</label>
+                        <input id="character" type="text" name="character">
+                    </p>
+                    <label></label>
+                    <textarea name="cause" cols="70px" rows="8px" placeholder="여기에 쓰세요"></textarea> 
+                    <input type="reset" value="다시 작성하기">
+            </fieldset>
+        </form>
+            <br>
+        <form>
+            <fieldset>
+                <legend>동물 선호도 조사</legend>
+                    <h4>당신은 어떤 동물을 좋아하십니까?</h4>
+                    <label for="city"></label>
+                    <select name="animal" id="animal">
+                        <optgroup label="네발동물">
+                            <option value="ga">강아지</option>
+                            <option value="na">고양이</option>
+                        </optgroup>
+                        <optgroup label="두발동물">
+                            <option value="ra">오리</option>
+                            <option value="ma">거위</option>
+                            <option value="ba">비둘기</option>
+                        </optgroup>
+                        <optgroup label="무발동물">
+                            <option value="sa">가자미</option>
+                            <option value="ya">참돔</option>
+                            <option value="ja">장어</option>
+                        </optgroup>
+                    </select>
+                    <h4>그 동물을 좋아하는 이유는 무엇입니까?</h4>
+                    <input type="text" name="like" list="like">
+                        <datalist id="like">
+                            <option value="귀엽게 생겨서">cute</option>
+                            <option value="털이 보드라와서">bosong</option>
+                            <option value="맛있어서">yamyam</option>
+                        </datalist>        
+            </fieldset>
+        </form>
+    </section>
+    <br>
+    <footer>
+        <input type="submit" value="제출">
+    </footer>
+
+</body>
+</html>
