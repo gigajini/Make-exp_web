@@ -1,0 +1,230 @@
+*{
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+body{
+    background-color: #BEC5BD;
+    width: 1120px;
+    padding: 60px 40px;
+    font-size: 18px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+    a:link{
+    text-decoration: none;
+    color: black;
+}
+
+    a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* header 시작 */
+            /* header_top 시작 */
+.header_top {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    letter-spacing: -0.5px;
+}
+
+.header_top img{
+    margin-right: 0;
+}
+
+.header_top h1{
+     font-size: 42px;
+     margin: 0;
+     font-weight: 700;
+}
+
+.header_top h1:first-child{
+    grid-column: 1 / span 2;
+}
+
+.header_top h1:last-child{
+    grid-column: 1;
+    grid-row: 2;
+}
+a.link_r:link {
+    color: red;
+}
+
+        /* header_top 종료 */
+
+header article {
+    width: 707px;
+    height: 80px;
+    margin: 49px  0   93px 0;
+    font-weight: 300;
+}
+
+header nav{
+    display: flex;
+    margin-bottom: 140px;
+}
+
+header nav div{
+    padding: 0 20px;
+    margin: 0;
+}
+
+
+
+
+header nav div:first-child a:link{color: black;}
+
+/* section_1 시작 */
+
+section[class^="section"]{
+    width: inherit;
+    height: 918px;
+}
+
+
+.section_title::after{
+    clear: both;
+}
+
+.section_title{
+    width: inherit;
+    height: 424px;
+    overflow: hidden;
+}
+
+.section_title img{
+    float: left;
+    object-fit: none;
+    width: 550px;
+    height: 424px;
+}
+
+.circle{
+    width: 375px;
+    height: 375px;
+    float: right;
+    margin: 24px 0 ;
+    border:1px solid;
+    border-radius: 50%;
+}
+
+.main_image {
+    position: relative;
+    width: 1120px;
+    height: 424px;
+}
+
+.main_image .maintitle{
+    position: absolute; top:15%; left: 3%;
+    color: #000;
+    text-align: center;
+}
+
+.main_t{
+    font-size: 161px;
+    font-weight: 500;
+    letter-spacing:-5px;
+}
+
+.main_tsub{
+    font-size: 62px;
+    font-style: italic;
+    position: absolute; left: 38%;
+ }
+
+                /* section_1 이미지 종료 */
+
+.section_2{
+    margin-top: 101px;
+}
+
+.imgdate{
+    width: 170px;
+    height: 40px;
+    margin-left: 0;
+    margin-top: 20px;
+    box-sizing: content-box;
+    position: relative;
+
+
+}
+
+.imgdate p{
+    font-size: 13px;
+    text-align: left;
+}
+
+#s_circle{
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    position: absolute; left: 43%;
+    border-radius: 50%;
+}
+
+article{
+    width: 305px;
+    height: 177px;
+    margin-left: 266px;
+    margin-top: 101px;
+    font-weight: 300;
+    line-height: 1.8em;
+}
+
+article h4{
+    font-size: 20px;
+    margin-top: 20px;
+    
+}
+
+.section_2 .main_image .section_title img {
+    float: right;
+}
+
+.section_2 .main_image .section_title .circle {
+    float: left;
+}
+
+.section_2 .main_image .maintitle{
+    position: absolute; top:20%; left: 14%;
+}
+
+.section_2 .maintitle .main_tsub {
+    position: absolute; right:-10%;
+}
+
+.section_2 .imgdate p{
+    text-align: right;
+}
+
+    
+ .section_2 #s_circle{
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    position: absolute; bottom: 0;
+    border-radius: 50%;
+}
+    
+.section_2 .imgdate {
+    margin-right:0;
+    margin-left: auto;
+}
+
+.section_2 article{
+    text-align: right;
+    margin-left: 549px;
+    margin-bottom: 301px;
+}
+
+footer {
+    margin-top: 200px;
+    line-height: 2.3em;
+}
+
+footer span {
+    color: #D02C0D;
+}
